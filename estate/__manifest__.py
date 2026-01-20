@@ -5,4 +5,7 @@
     'author': 'hiabd',
     'category': 'Category',
     'description': 'View property listings and offers.',
+    'data': [
+        'security/ir.model.access.csv',
+    ],
 }
