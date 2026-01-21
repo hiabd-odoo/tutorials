@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f0498a3-07fd-408c-af35-20546792a476" name="Changes" comment="" />
+    <list default="true" id="4f0498a3-07fd-408c-af35-20546792a476" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/estate/models/estate_property_offer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estate/models/estate_property_tag.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estate/models/estate_property_type.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estate/views/estate_property_offer_views.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estate/views/estate_property_tag_views.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estate/views/estate_property_type_views.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/tutorials.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tutorials.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estate/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/estate/__manifest__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estate/data/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/estate/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/estate/models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estate/models/estate_property.py" beforeDir="false" afterPath="$PROJECT_DIR$/estate/models/estate_property.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estate/security/ir.model.access.csv" beforeDir="false" afterPath="$PROJECT_DIR$/estate/security/ir.model.access.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estate/views/estate_menus.xml" beforeDir="false" afterPath="$PROJECT_DIR$/estate/views/estate_menus.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estate/views/estate_property_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/estate/views/estate_property_views.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,9 +29,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="38TIjP8rqfJXSIR7o0WBiLSe0sY" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -26,11 +45,18 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "ai.playground.ignore.import.keys.banner.in.settings": "true",
     "git-widget-placeholder": "dev",
-    "last_opened_file_path": "/home/odoo/Desktop/Code/tutorials",
+    "last_opened_file_path": "/home/odoo/Desktop/Code/tutorials/estate/views",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.inline.completion",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/estate/views" />
+      <recent name="$PROJECT_DIR$/estate/models" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -47,6 +73,7 @@
       <option name="presentableId" value="Default" />
       <updated>1768817268555</updated>
       <workItem from="1768817269724" duration="4690000" />
+      <workItem from="1768987724704" duration="10249000" />
     </task>
     <servers />
   </component>

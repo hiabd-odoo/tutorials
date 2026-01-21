@@ -1,8 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+    <record id="estate_property_action" model="ir.actions.act_window">
+        <field name="name">Estate Property</field>
+        <field name="res_model">estate.property</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="estate_property_type_action" model="ir.actions.act_window">
+        <field name="name">Estate Property Type</field>
+        <field name="res_model">estate.property.type</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="estate_property_tag_action" model="ir.actions.act_window">
+        <field name="name">Property Tag</field>
+        <field name="res_model">estate.property.tag</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
     <menuitem id="estate_menu_root" name="Estate Property">
-        <menuitem id="estate_first_level_menu" name="First Level">
-            <menuitem id="estate_menu_action" action="estate_property_action"/>
+        <menuitem id="estate_property_menu" name="Advertisements" action="estate_property_action"/>
+        <menuitem id="estate_property_type_menu" name="Settings">
+            <menuitem id="estate_type_menu_action" name="Property Type" action="estate_property_type_action"/>
+            <menuitem id="estate_Tag_menu_action" name="Property Tag" action="estate_property_tag_action"/>
         </menuitem>
     </menuitem>
+
 </odoo>
