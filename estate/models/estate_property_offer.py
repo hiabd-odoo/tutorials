@@ -34,5 +34,13 @@ class EstatePropertyType(models.Model):
         return True
     def refuse_offer(self):
         for record in self:
+            if record.status == "accepted":
+                record.property_id.selling_price = 0
             record.status = 'refused'
         return True
+
+    #Constraints
+    _check_price = models.Constraint(
+        'CHECK(price > 0)',
+        'The Offer Prices should be strictly positive.'
+    )

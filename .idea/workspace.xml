@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f0498a3-07fd-408c-af35-20546792a476" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/tutorials.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tutorials.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/estate/models/estate_property.py" beforeDir="false" afterPath="$PROJECT_DIR$/estate/models/estate_property.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/estate/models/estate_property_offer.py" beforeDir="false" afterPath="$PROJECT_DIR$/estate/models/estate_property_offer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/estate/views/estate_property_offer_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/estate/views/estate_property_offer_views.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/estate/views/estate_property_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/estate/views/estate_property_views.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estate/models/estate_property_tag.py" beforeDir="false" afterPath="$PROJECT_DIR$/estate/models/estate_property_tag.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +84,7 @@
       <option name="presentableId" value="Default" />
       <updated>1768817268555</updated>
       <workItem from="1768817269724" duration="4690000" />
-      <workItem from="1768987724704" duration="31275000" />
+      <workItem from="1768987724704" duration="35795000" />
     </task>
     <servers />
   </component>
