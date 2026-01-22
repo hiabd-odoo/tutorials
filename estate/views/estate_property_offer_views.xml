@@ -7,9 +7,11 @@
             <list string="Properties">
                 <field name="price"/>
                 <field name="partner_id"/>
-                <field name="status"/>
                 <field name="validity_days"/>
                 <field name="deadline"/>
+                <button name="accept_offer" type="object" title="Accept" string="" icon="fa-check"/>
+                <button name="refuse_offer" type="object" title="Refuse" string="" icon="fa-close"/>
+                <field name="status"/>
             </list>
         </field>
     </record>
@@ -19,11 +21,17 @@
         <field name="model">estate.property.offer</field>
         <field name="arch" type="xml">
             <form string="Property Offer">
-                <field name="price"/>
-                <field name="partner_id"/>
-                <field name="status"/>
-                <field name="validity_days"/>
-                <field name="deadline"/>
+                <header>
+                    <button name="accept_offer" type="object" string="Accept" icon="fa-check"/>
+                    <button name="refuse_offer" type="object" string="Refuse" icon="fa-close"/>
+                </header>
+                <group>
+                    <field name="price"/>
+                    <field name="partner_id"/>
+                    <field name="status"/>
+                    <field name="validity_days"/>
+                    <field name="deadline"/>
+                </group>
             </form>
         </field>
     </record>

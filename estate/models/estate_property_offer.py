@@ -12,15 +12,27 @@ class EstatePropertyType(models.Model):
     partner_id = fields.Many2one("res.partner",required=True)
     property_id = fields.Many2one("estate.property",required=True)
     validity_days = fields.Integer(string="Validity (Days)",default=_default_validity)
-    deadline = fields.Date(compute="_getDeadline",inverse="_inverseDeadline",default=fields.Date.today()+relativedelta(days=_default_validity))
+    deadline = fields.Date(compute="_get_deadline",inverse="_inverse_deadline",default=fields.Date.today()+relativedelta(days=_default_validity))
 
     @api.depends("validity_days")
-    def _getDeadline(self):
+    def _get_deadline(self):
         for record in self:
             _from_date = record.create_date if record.create_date else fields.Date.today()
             record.deadline = _from_date + relativedelta(days=record.validity_days)
 
-    def _inverseDeadline(self):
+    def _inverse_deadline(self):
         for record in self:
             _from_date = record.create_date if record.create_date else fields.Date.today()
             record.validity_days = (record.deadline - _from_date.date()).days
+
+    def accept_offer(self):
+        for record in self:
+            for offer in record.property_id.offer_ids:
+                offer.status = "accepted" if offer.id == record.id else "refused"
+            record.property_id.selling_price = record.price
+            record.property_id.buyer_id = record.partner_id
+        return True
+    def refuse_offer(self):
+        for record in self:
+            record.status = 'refused'
+        return True
