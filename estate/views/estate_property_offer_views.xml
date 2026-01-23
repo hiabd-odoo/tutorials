@@ -4,14 +4,17 @@
         <field name="name">estate.property.offer.list</field>
         <field name="model">estate.property.offer</field>
         <field name="arch" type="xml">
-            <list string="Properties">
+            <list string="Properties" editable="top" decoration-danger="status == 'refused'"
+                  decoration-success="status == 'accepted'">
                 <field name="price"/>
                 <field name="partner_id"/>
                 <field name="validity_days"/>
                 <field name="deadline"/>
-                <button name="accept_offer" type="object" title="Accept" string="" icon="fa-check"/>
-                <button name="refuse_offer" type="object" title="Refuse" string="" icon="fa-close"/>
-                <field name="status"/>
+                <button name="accept_offer" type="object" title="Accept" string="" icon="fa-check"
+                        invisible="status in ('accepted','refused')"/>
+                <button name="refuse_offer" type="object" title="Refuse" string="" icon="fa-close"
+                        invisible="status in ('accepted','refused')"/>
+                <field name="status" invisible="True"/>
             </list>
         </field>
     </record>
@@ -22,8 +25,10 @@
         <field name="arch" type="xml">
             <form string="Property Offer">
                 <header>
-                    <button name="accept_offer" type="object" string="Accept" icon="fa-check"/>
-                    <button name="refuse_offer" type="object" string="Refuse" icon="fa-close"/>
+                    <button name="accept_offer" type="object" string="Accept" icon="fa-check"
+                            invisible="status in ('accepted','refused')"/>
+                    <button name="refuse_offer" type="object" string="Refuse" icon="fa-close"
+                            invisible="status in ('accepted','refused')"/>
                 </header>
                 <group>
                     <field name="price"/>
