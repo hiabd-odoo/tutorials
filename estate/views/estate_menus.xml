@@ -19,11 +19,11 @@
         <field name="view_mode">list,form</field>
     </record>
 
-    <menuitem id="estate_menu_root" name="Estate Property">
+    <menuitem id="estate_property_menu_root" name="Estate Property">
         <menuitem id="estate_property_menu" name="Advertisements" action="estate_property_action"/>
         <menuitem id="estate_property_type_menu" name="Settings">
-            <menuitem id="estate_type_menu_action" name="Property Type" action="estate_property_type_action"/>
-            <menuitem id="estate_Tag_menu_action" name="Property Tag" action="estate_property_tag_action"/>
+            <menuitem id="estate_property_type_menu_action" name="Property Type" action="estate_property_type_action"/>
+            <menuitem id="estate_property_tag_menu_action" name="Property Tag" action="estate_property_tag_action"/>
         </menuitem>
     </menuitem>
 
