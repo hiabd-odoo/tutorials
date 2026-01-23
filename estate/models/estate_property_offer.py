@@ -45,12 +45,6 @@ class EstatePropertyType(models.Model):
                 "buyer_id": record.partner_id,
                 "state": "offer_accepted"
             })
-
-        # for record in self:
-        #     for offer in record.property_id.offer_ids:
-        #         offer.status = "accepted" if offer.id == record.id else "refused"
-        #     record.property_id.selling_price = record.price
-        #     record.property_id.buyer_id = record.partner_id
         return True
 
     def refuse_offer(self):
@@ -59,10 +53,5 @@ class EstatePropertyType(models.Model):
             "state": "offer_received"
         })
         self.status = "refused"
-        # for record in self:
-        #     if record.status == "accepted":
-        #         record.property_id.selling_price = 0
-        #         record.property_id.state = "offer_received"
-        #     record.status = 'refused'
         return True
 
