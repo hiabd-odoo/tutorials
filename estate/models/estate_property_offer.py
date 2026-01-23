@@ -17,6 +17,12 @@ class EstatePropertyType(models.Model):
                            default=fields.Date.today() + relativedelta(days=_default_validity))
     property_type_id = fields.Many2one(related="property_id.property_type_id", store=True)
 
+    # Constraints
+    _check_price = models.Constraint(
+        'CHECK(price > 0)',
+        'The Offer Prices should be strictly positive.'
+    )
+
     @api.depends("validity_days")
     def _compute_deadline(self):
         for record in self:
@@ -60,8 +66,3 @@ class EstatePropertyType(models.Model):
         #     record.status = 'refused'
         return True
 
-    # Constraints
-    _check_price = models.Constraint(
-        'CHECK(price > 0)',
-        'The Offer Prices should be strictly positive.'
-    )
