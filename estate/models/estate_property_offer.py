@@ -57,11 +57,17 @@ class EstatePropertyType(models.Model):
         self.status = "refused"
         return True
 
-    @api.model
+    @api.model_create_multi
     def create(self, vals_list):
         for record in vals_list:
             estate_property = self.env['estate.property'].browse(record['property_id'])
             prices = [offer.price for offer in estate_property.offer_ids]
             if len(list(filter(lambda x: x > record['price'],prices))) > 0:
                 raise ValidationError(_('You cannot create an offer with a lower amount than an existing offer.'))
-        return super().create(vals_list)
+        res =  super().create(vals_list)
+
+        # do something with res
+        for record in res:
+            # create a new default offer object
+            pass
+        return res

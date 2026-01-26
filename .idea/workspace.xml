@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f0498a3-07fd-408c-af35-20546792a476" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/estate/models/res_users.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/estate/views/res_users_views.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/estate/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/estate/__manifest__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/estate/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/estate/models/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/estate/models/estate_property.py" beforeDir="false" afterPath="$PROJECT_DIR$/estate/models/estate_property.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/estate/models/estate_property_offer.py" beforeDir="false" afterPath="$PROJECT_DIR$/estate/models/estate_property_offer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/estate/views/estate_property_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/estate/views/estate_property_views.xml" afterDir="false" />
@@ -118,7 +115,7 @@
       <updated>1768817268555</updated>
       <workItem from="1768817269724" duration="4690000" />
       <workItem from="1768987724704" duration="67525000" />
-      <workItem from="1769166482012" duration="28604000" />
+      <workItem from="1769166482012" duration="44887000" />
     </task>
     <servers />
   </component>
