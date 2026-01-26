@@ -1,5 +1,7 @@
-from odoo import api, fields, models
+from odoo import _, api, fields, models
 from dateutil.relativedelta import relativedelta
+
+from odoo.exceptions import ValidationError
 
 
 class EstatePropertyType(models.Model):
@@ -55,3 +57,11 @@ class EstatePropertyType(models.Model):
         self.status = "refused"
         return True
 
+    @api.model
+    def create(self, vals_list):
+        for record in vals_list:
+            estate_property = self.env['estate.property'].browse(record['property_id'])
+            prices = [offer.price for offer in estate_property.offer_ids]
+            if len(list(filter(lambda x: x > record['price'],prices))) > 0:
+                raise ValidationError(_('You cannot create an offer with a lower amount than an existing offer.'))
+        return super().create(vals_list)

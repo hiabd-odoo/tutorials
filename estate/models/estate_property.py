@@ -1,6 +1,7 @@
 from odoo import _, api, exceptions, fields, models
 from dateutil.relativedelta import relativedelta
 from odoo.exceptions import UserError, ValidationError
+from odoo.orm.decorators import ondelete
 from odoo.tools import float_compare, float_is_zero
 
 
@@ -97,3 +98,9 @@ class EstateProperty(models.Model):
             else:
                 raise UserError(_('A cancelled property cannot be sold.'))
         return True
+
+    @ondelete(at_uninstall=False)
+    def _check_deletion_state(self):
+        for record in self:
+            if record.state not in ('new','cancelled'):
+                raise ValidationError(_('Only New or Cancelled properties can be deleted.'))
