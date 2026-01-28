@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f0498a3-07fd-408c-af35-20546792a476" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/estate_account/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/estate_account/__manifest__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/estate_account/models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/estate_account/models/estate_property.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/estate_account/security/ir.model.access.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/estate/models/estate_property_offer.py" beforeDir="false" afterPath="$PROJECT_DIR$/estate/models/estate_property_offer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estate/views/estate_menus.xml" beforeDir="false" afterPath="$PROJECT_DIR$/estate/views/estate_menus.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/estate/views/estate_property_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/estate/views/estate_property_views.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estate_account/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/estate_account/__manifest__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estate_account/models/estate_property.py" beforeDir="false" afterPath="$PROJECT_DIR$/estate_account/models/estate_property.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +24,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../enterprise" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="ProjectColorInfo">{
@@ -46,8 +43,8 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "ai.playground.ignore.import.keys.banner.in.settings": "true",
-    "git-widget-placeholder": "dev",
-    "last_opened_file_path": "/home/odoo/Desktop/Code/odoo/odoo-bin",
+    "git-widget-placeholder": "19.0",
+    "last_opened_file_path": "/home/odoo/Desktop/Code",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "PyConsoleConfigurable.Python Console",
     "vue.rearranger.settings.migration": "true"
@@ -118,7 +115,7 @@
       <updated>1768817268555</updated>
       <workItem from="1768817269724" duration="4690000" />
       <workItem from="1768987724704" duration="67525000" />
-      <workItem from="1769166482012" duration="53517000" />
+      <workItem from="1769166482012" duration="64210000" />
     </task>
     <servers />
   </component>
@@ -126,6 +123,6 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/tutorials$odoo_bin.coverage" NAME="odoo-bin Coverage Results" MODIFIED="1769167231759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/tutorials$odoo_bin.coverage" NAME="odoo-bin Coverage Results" MODIFIED="1769494129774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
